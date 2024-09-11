@@ -1,0 +1,19 @@
+# Run ollama without sudo privilege
+# copy ollama link from latest releases https://github.com/ollama/ollama/releases
+
+wget https://github.com/ollama/ollama/releases/download/v0.3.10/ollama-linux-amd64.tgz
+
+## view .tgz file content
+tar -ztvf ollama-linux-amd64.tgz
+
+## unzip .tgz file
+tar -xvzf ollama-linux-amd64.tgz
+
+## cd into bin folder and serve
+./ollama serve
+
+## pull a model
+./ollama pull llama3.1
+
+## run model
+./ollama run llama3.1
